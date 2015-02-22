@@ -5774,57 +5774,79 @@ template {
 .btn-large {
   background-color: #2196f3;
 }
+a.ai-btn,
 .ai-btn {
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  padding: 0 2rem;
+  float: left;
+  margin: 20px 20px 0 0;
+  outline: none;
   border: none;
+  text-align: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 2px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  padding: 0;
-  margin: 0;
-  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  line-height: 38px;
+  -webkit-transition: box-shadow 300ms ease;
+          transition: box-shadow 300ms ease;
+  background: #fff;
+  color: #9e9e9e;
+  text-transform: uppercase;
 }
+a.ai-btn:hover,
+.ai-btn:hover {
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+}
+a.ai-btn:active,
+.ai-btn:active {
+  box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+a.ai-btn.btn-round,
 .ai-btn.btn-round {
   border-radius: 100%;
   height: 64px;
   width: 64px;
 }
+a.ai-btn.btn-sm,
 .ai-btn.btn-sm {
-  height: 40px;
-  width: 40px;
+  padding: 0 1.6rem;
+  line-height: 24px;
 }
+a.ai-btn.btn-md,
 .ai-btn.btn-md {
-  height: 64px;
-  width: 64px;
+  line-height: 38px;
 }
+a.ai-btn.btn-lg,
 .ai-btn.btn-lg {
-  height: 80px;
-  width: 80px;
+  padding: 0 3rem;
+  line-height: 64px;
 }
+a.ai-btn.btn-xl,
+.ai-btn.btn-xl {
+  padding: 0 4rem;
+  line-height: 80px;
+}
+a.ai-btn.btn-flat,
 .ai-btn.btn-flat {
   box-shadow: 0;
 }
-.ai-btn:hover {
-  box-shadow: 0px 6px 8px rgba(0,0,0,0.2);
-}
-.ai-btn:active {
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-}
+a.ai-btn .action-buttons .ai-btn,
 .ai-btn .action-buttons .ai-btn {
   width: 0 !important;
   height: 0 !important;
 }
+a.ai-btn .primary-action,
 .ai-btn .primary-action {
   box-sizing: border-box;
   display: -webkit-box;
@@ -5843,6 +5865,48 @@ template {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+a.ai-btn.btn-default,
+.ai-btn.btn-default {
+  color: #9e9e9e !important;
+  background: #fff !important;
+  background-color: #fff !important;
+}
+a.ai-btn.btn-primary,
+.ai-btn.btn-primary {
+  color: #fff !important;
+  background: #2196f3 !important;
+  background-color: #2196f3 !important;
+}
+a.ai-btn.btn-info,
+.ai-btn.btn-info {
+  color: #fff !important;
+  background: #03a9f4 !important;
+  background-color: #03a9f4 !important;
+}
+a.ai-btn.btn-success,
+.ai-btn.btn-success {
+  color: #fff !important;
+  background: #4caf50 !important;
+  background-color: #4caf50 !important;
+}
+a.ai-btn.btn-warning,
+.ai-btn.btn-warning {
+  color: #fff !important;
+  background: #ffc107 !important;
+  background-color: #ffc107 !important;
+}
+a.ai-btn.btn-danger,
+.ai-btn.btn-danger {
+  color: #fff !important;
+  background: #f44336 !important;
+  background-color: #f44336 !important;
+}
+a.ai-btn.btn-invert,
+.ai-btn.btn-invert {
+  color: #f5f5f5 !important;
+  background: #424242 !important;
+  background-color: #424242 !important;
 }
 .ai-action-reveal {
   box-sizing: border-box;
@@ -6105,6 +6169,7 @@ template {
   margin-top: 10px;
 }
 .ai-card .card-content {
+  width: 100%;
   box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6122,6 +6187,7 @@ template {
           flex-direction: column;
 }
 .ai-card .card-heading {
+  width: 100%;
   background-color: #fff;
   box-sizing: border-box;
   display: -webkit-box;
@@ -6135,12 +6201,13 @@ template {
   color: #9e9e9e;
 }
 .ai-card .card-body {
+  width: 100%;
   background-color: #fff;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
@@ -6153,6 +6220,7 @@ template {
   padding: 10px;
 }
 .ai-card .card-footer {
+  width: 100%;
   background-color: #fff;
   box-sizing: border-box;
   display: -webkit-box;
