@@ -5,6 +5,7 @@
     <import from="./system/ai-action-reveal"></import>
     <import from="./system/ai-btn"></import>
     <import from="./system/ai-tabs"></import>
+    <import from="./system/ai-modal"></import>
 
 
         <div ai-tabs="active-tab-ref.two-way: selectedTabRef; show-tab.call: updateTabSliderPosition(tabsInstance);" class="${showMyTab.name}">
@@ -88,7 +89,26 @@
                   <ai-card>
                     <h2 class="card-heading">aiModal</h2>
                     <div class="card-body">
-                      <button class="btn btn-large btn-raised bg-blue">Open Modal</button>
+                      <button class="btn btn-large btn-raised bg-blue" click.delegate="openModal()">Open Modal</button>
+                      <ai-modal ai-toggle-open.bind="modalIsOpen">
+                        This is my modal content
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <button class="btn btn-large btn-raised bg-blue" click.delegate="openSecondaryModal()">Open Modal</button>
+                        <ai-modal ai-toggle-open.bind="secondaryModalIsOpen">
+                          This is my modal content
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </ai-modal>
+                      </ai-modal>
                     </div>
                   </ai-card>
                 </div>

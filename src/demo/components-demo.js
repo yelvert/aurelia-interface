@@ -4,6 +4,8 @@ export class Components{
 
         this.heading = 'aiComponents ';
         this.selectedTabRef = 'tab-2'
+        this.modalIsOpen = false
+        this.secondaryModalIsOpen = false
 
     }
 
@@ -30,5 +32,13 @@ export class Components{
 
         next()
 
+    }
+
+    openModal () {
+        this.modalIsOpen = !this.modalIsOpen
+    }
+
+    openSecondaryModal () {
+        this.secondaryModalIsOpen = !this.secondaryModalIsOpen
     }
 }

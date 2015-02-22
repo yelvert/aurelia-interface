@@ -6237,6 +6237,51 @@ a.ai-btn.btn-invert,
 .ai-card .card-footer .card-footer-text {
   padding: 10px;
 }
+ai-modal {
+  display: none;
+}
+body > ai-modal-overlay {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  display: none;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+body > ai-modal-overlay.attached {
+  opacity: 0.5;
+  display: block;
+}
+body > ai-modal {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  width: 500px;
+  background-color: #fff;
+  padding: 10px;
+  -webkit-transition-property: top;
+  transition-property: top;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.6);
+}
+body > ai-modal.attached {
+  top: 30vh;
+}
 .ai-tabs {
   box-sizing: border-box;
   display: -webkit-box;

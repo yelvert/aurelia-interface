@@ -6,6 +6,7 @@ import {AiCard} from './ai-card'
 import {AiBtn} from './ai-btn'
 import {AiDropdown} from './ai-dropdown'
 import {AiActionReveal} from './ai-action-reveal'
+import {AiModal} from './ai-modal'
 
 function install(aurelia){
   aurelia.withResources([ AiBtnToggleAttachedBehavior
@@ -16,6 +17,7 @@ function install(aurelia){
                         , AiAction
                         , AiCard
                         , AiBtn
+                        , AiModal
                         ]);
 }
 
@@ -27,5 +29,6 @@ export  {AiBtnToggleAttachedBehavior
         , AiAction
         , AiCard
         , AiBtn
+        , AiModal
         , install
         };

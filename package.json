@@ -58,9 +58,6 @@
     "gulp-stylus": "^2.0.0"
   },
   "jspm": {
-    "directories": {
-      "lib": "lib"
-    },
     "dependencies": {
       "Waves": "github:fians/Waves@^0.6.0",
       "aurelia-bootstrapper": "^0.9.1",

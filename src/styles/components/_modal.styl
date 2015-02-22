@@ -1,0 +1,39 @@
+ai-modal
+  display: none
+
+body
+  > ai-modal-overlay
+    position: absolute
+    background-color: black
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    opacity: 0
+    display: none
+    transition-property(opacity)
+    transition-duration()
+    transition-timing-function()
+    
+    &.attached
+      opacity: .5
+      display: block
+   
+  > ai-modal
+    display: block
+    position: absolute
+    margin: auto
+    top: -100vh
+    left: 0
+    right: 0
+    width: 500px
+    background-color: white
+    padding: 10px
+    transition-property(top)
+    transition-duration()
+    transition-timing-function()
+    z-depth-2(rgba(0,0,0,.5), rgba(0,0,0,.6))
+    
+    &.attached
+      top: 30vh
